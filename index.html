@@ -1,37 +1,90 @@
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Flex panel image gallery</title>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <style>
-        
+        html {
+             box-sizing: border-box;
+             background:#ffc600;
+             font-family:'helvetica neue';
+             font-size: 20px;
+             font-weight: 200;
+        }
+        body {
+            margin: 0;
+        }
+        *, *:before, *:after {
+         box-sizing: inherit;
+        }
+        .panels {
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .panel {
+            background:#6B0F9C;
+            box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+            color:white;
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            transition: 
+            font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            background 0.2s;
+            
+        }
+
+        .panel > * {
+            margin:0;
+            width: 100%;
+            transition:transform 0.5s;
+    }
+        .panel p {
+             text-transform: uppercase;
+             font-family: 'Indie Flower', cursive;
+             text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+             font-size: 2em;
+        }
+        .panel p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    .panel.open {
+      font-size:40px;
+    }
+
         </style>
     </head>
     <body>
-
-        <div class = "panel">
-                <p>Vos</p>
-                <p>Podés</p>
-                <p>Lograrlo</p>
-        </div>
-        <div class = "panel">
-                <p>Solo</p>
-                <p>Cambiar</p>
-                <p>Hábitos</p>
-        </div>
-        <div class = "panel">
-                <p>Lo que</p>
-                <p>Tú</p>
-                <p>Quieras</p>
-        </div>
-        <div class = "panel">
-                <p>La</p>
-                <p>Vida</p>
-                <p>Te enseña</p>
-        </div>
-        <div class = "panel">
-                <p>Hazlo</p>
-                <p>Ahora</p>
-                <p>Sin excusas</p>
+        <div class = "panels">
+            <div class = "panel" id = "panel1">
+                    <p>Vos</p>
+                    <p>Podés</p>
+                    <p>Lograrlo</p>
+            </div>
+            <div class = "panel" id = "panel2">
+                    <p>Solo</p>
+                    <p>Cambiar</p>
+                    <p>Hábitos</p>
+            </div>
+            <div class = "panel" id = "panel3">
+                    <p>Lo que</p>
+                    <p>Tú</p>
+                    <p>Quieras</p>
+            </div>
+            <div class = "panel" id = "panel4">
+                    <p>La</p>
+                    <p>Vida</p>
+                    <p>Te enseña</p>
+            </div>
+            <div class = "panel" id = "panel5">
+                    <p>Hazlo</p>
+                    <p>Ahora</p>
+                    <p>Sin excusas</p>
+            </div>
         </div>
         <script>
         
