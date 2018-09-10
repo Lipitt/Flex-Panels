@@ -4,9 +4,6 @@
         <title>Flex panel image gallery</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-        <style>
-        
-        </style>
     </head>
     <body>
         <div class = "panels">
@@ -36,24 +33,6 @@
                     <p>Sin excusas</p>
             </div>
         </div>
-        <script>
-        const panels = document.querySelectorAll('.panel');
-        
-        function toggleOpen(){
-            this.classList.toggle('open');
-
-        }
-
-          function toggleActive(e){
-              if(e.propertyName.includes('flex')){
-                this.classList.toggle('open-active');
-                console.log("hola");
-              }
-            
-
-        }
-        panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-        panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-        </script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
