@@ -60,12 +60,19 @@
              font-size: 2em;
              
         }
+        .panel > * :first-child {transform: translateY(-100%)}
+        .panel > * :first-child.open-active {transform: translateY(0)}
+        .panel > * :last-child {transform: translateY(100%)}
+        .panel > * :last-child.open-active {transform: translateY(0)}
+
+
         .panel p:nth-child(2) {
       font-size: 4em;
     }
-        
+
     .panel.open {
       font-size:40px;
+      flex: 5;
     }
     #panel1{ background-image: url(https://source.unsplash.com/31ZTktPVnl4/1225x1500);}
     #panel2{ background-image: url(https://source.unsplash.com/_oXUY57pp5Q/1500x1500);}
