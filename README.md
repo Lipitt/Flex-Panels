@@ -1,2 +1,3 @@
-# Flex-Panels https://Lipitt.github.io/Flex-Panels
-javascript30 flex panels image gallery proyect
+# Flex-Panels
+Pequeña galeria de imagenes usando paneles flexibles. https://Lipitt.github.io/Flex-Panels
+
