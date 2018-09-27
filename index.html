@@ -62,6 +62,9 @@
         font-size: 2em;
         
     }
+
+    /* esta clase es la que define el movimiento del texto de un panel cuando se disparan los eventos. 
+    al hacer un toggle de la clase .open-active el texto aparecera o desaparecera, segun corresponda*/
     .panel > *:first-child {transform: translateY(-100%);}
     .panel.open-active > *:first-child {transform: translateY(0);}
     .panel > *:last-child {transform: translateY(100%);}
@@ -72,6 +75,8 @@
     font-size: 4em;
     }
     
+    /* Al agregarse la clase open, el valor de flex pasa a ser 5, haciendo que el panel correspondiente 
+    se expanda.*/
     .panel.open {
     font-size: 17px;
     flex: 5;
