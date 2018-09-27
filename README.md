@@ -1,2 +1,2 @@
 # Flex-Panels
-javascript30 flex panels image gallery proyect
+Pequeña galeria de imagenes usando paneles flexibles.
